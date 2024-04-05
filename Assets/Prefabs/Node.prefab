@@ -115,8 +115,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6520287657435739059}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e9b3cf7f52d8eb4f82540c1051d97c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 15c257b55c61aa24b8d267ff6755f323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0.9547169, g: 0.4196092, b: 0.40890706, a: 0}
-  positionOffset: {x: 0, y: 0.5, z: 0}
+  hoverColor: {r: 0.2999999, g: 1, b: 0.3656249, a: 1}
+  positionOffset: {x: 0, y: 0, z: 0}
+  turret: {fileID: 0}
+  notEnoughMoneyColor: {r: 0.9245283, g: 0.3122463, b: 0.3122463, a: 0}
