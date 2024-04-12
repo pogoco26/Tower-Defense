@@ -1,4 +1,5 @@
 using UnityEngine;
+using Cinemachine;
 public class Bullet : MonoBehaviour {
 	private Transform target;
 
@@ -6,6 +7,8 @@ public class Bullet : MonoBehaviour {
 	public float explosionRadius = 0f;
 	public int damage = 50;
 	public GameObject impactEffect;
+	public CinemachineVirtualCamera vCamera;
+    public CinemachineImpulseSource ImpulseSource;
 
 	public void Seek (Transform _target)
 	{
@@ -57,6 +60,7 @@ public class Bullet : MonoBehaviour {
 				Damage(collider.transform);
 			}
 		}
+		ImpulseSource.GenerateImpulse();
 	}
 
 	void Damage (Transform enemy)

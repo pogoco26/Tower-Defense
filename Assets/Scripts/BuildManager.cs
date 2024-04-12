@@ -12,7 +12,7 @@ public class BuildManager : MonoBehaviour {
 	}
 
 	public GameObject buildEffect;
-
+	public GameObject sellEffect;
 	private TurretBlueprint turretToBuild;
 	private Node selectedNode; 
 	public NodeUI nodeUI;
@@ -42,7 +42,7 @@ public class BuildManager : MonoBehaviour {
 		selectedNode = null;
 		nodeUI.Hide();
 	}
-
+	/*
 	public void BuildTurretOn(Node node)
 	{
 
@@ -58,5 +58,12 @@ public class BuildManager : MonoBehaviour {
 		Destroy(effect, 5f);
 		Debug.Log("Turret build! Money left: " + PlayerStats.Money);
 	}
+	*/
+	public TurretBlueprint GetTurretToBuild ()
+	{
+		return turretToBuild;
+	}
+
+
 
 }
